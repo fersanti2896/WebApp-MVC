@@ -20,25 +20,25 @@ Se detalla a continuación lo que abarca el proyecto:
 
 Con `appsettings.json` se definen la conexión hacia el motor de bases de datos, en este caso para SQL Server.
 
-![appSettings](/images/appSettings.png)
+![appSettings](images/appSettings.png)
 
 ### Conexión hacia la BD
 
 Una vez definida la conexión hacia el moto de base de datos, con la clase `ConfigurationBuilder()` se define la ruta con el archivo `appsettings.json`.
 
-![conexionDB](/images/conexionDB.png)
+![conexionDB](images/conexionDB.png)
 
 ### Definición del modelo
 
 Damos el mismo tipado y propiedades con una clase que tiene nuestra tabla Contáctos donde se encuentra nuestra base de datos en SQL Server. Misma que usará para hacer las consultas y posteriormente nuestro controlador. 
 
-![mantenedorModel](/images/mantenedorModel.png)
+![mantenedorModel](images/mantenedorModel.png)
 
 ### Definición de Querys del modelo 
 
 Una vez creado nuestro modelo que mapeará a la tabla de Contáctos en nuestra base de datos, se definen las consultas propias de CRUD, cabe resaltar que estas consultas mapean hacia procedimientos almacenados (`StoredProcedure`) previamente definidos en nuestra base de datos. 
 
-![mantedorQuerys](/images/mantenedorQuerys.png)
+![mantedorQuerys](images/mantenedorQuerys.png)
 
 ### Definición del controlador
 
@@ -46,7 +46,7 @@ Teniendo nuestro modelo y la clase que define las consultas hacia nuestra base d
 
 Se crea el controlador que hace las acciones entre el modelo y lo traspasa hacia la clase `View()` para que pueda ser mostrado.
 
-![mantenedorController](/images/mantenedorController.png)
+![mantenedorController](images/mantenedorController.png)
 
 ### Creación de vistas
 
@@ -54,26 +54,26 @@ Se crea el controlador que hace las acciones entre el modelo y lo traspasa hacia
 
 Para la vista `Listar.cshtml` se define con una etiqueta de _Razor_ hacia la clase modelo que traerá las propiedades que se usarán para que puedan ser mostradas. 
 
-![listContact](/images/listContact.png)
+![listContact](images/listContact.png)
 
 #### Crear
 
 Para la vista `Guardar.cshtml` se define con una etiqueta de _Razor_ hacia la clase modelo que traerá las propiedades que se usará para crear un nuevo contacto. 
 
-![createContact](/images/creatContact.png)
+![createContact](images/creatContact.png)
 
 
 #### Editar
 
 Para la vista `Editar.cshtml` se define con una etiqueta de _Razor_ hacia la clase modelo que traerá las propiedades que se usará para editar un contacto. 
 
-![editContact](/images/editContact.png)
+![editContact](images/editContact.png)
 
 #### Eliminar
 
 Para la vista `Eliminar.cshtml` se define con una etiqueta de _Razor_ hacia la clase modelo que traerá el id que se usará para eliminar un contacto. 
 
-![deleteContact](/images/deleteContact.png)
+![deleteContact](images/deleteContact.png)
 
 ### Resultados
 
@@ -81,15 +81,15 @@ Las vistas finales son:
 
 Para el listado de contactos.
 
-![listado](/images/image1.PNG)
+![listado](images/image1.PNG)
 
 Para la creación de un nuevo contacto.
 
-![creacion](/images/image2.PNG)
+![creacion](images/image2.PNG)
 
 Para actualizar un contacto existente. 
 
-![actualizacion](/images/image3.PNG)
+![actualizacion](images/image3.PNG)
 
 Par eliminar un contacto.  
 
