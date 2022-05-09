@@ -93,8 +93,8 @@ Para actualizar un contacto existente.
 
 Par eliminar un contacto.  
 
-![eliminacion](/images/image4.PNG)
+![eliminacion](images/image4.PNG)
 
 Listado final
 
-![listadoFinal](/images/image5.PNG)
+![listadoFinal](images/image5.PNG)
